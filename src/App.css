@@ -1,0 +1,25 @@
+body{
+  background: #212121;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+  .btn_shine {
+    @apply text-3xl relative inline-block py-3 px-12 font-semibold text-transparent bg-gradient-to-r from-gray-400 via-gray-300 to-gray-500 bg-clip-text;
+    animation: shine 3s infinite linear;
+  }
+
+  @keyframes shine {
+    0% {
+      background-position: 0;
+    }
+    60% {
+      background-position: 180px;
+    }
+    100% {
+      background-position: 180px;
+    }
+  }
+
